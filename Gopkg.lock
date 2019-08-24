@@ -2,20 +2,60 @@
 
 
 [[projects]]
+  digest = "1:6e31264933666d378886f11c2a9de2695d6616522d3088be0120104b274e8781"
   name = "github.com/gin-gonic/gin"
-  packages = [".","binding","render"]
+  packages = [
+    ".",
+    "binding",
+    "render",
+  ]
+  pruneopts = ""
   revision = "50e7e427300a7eeeb299a4cd5bc1ebfa04d48528"
   version = "v0.5"
 
 [[projects]]
+  digest = "1:cb9a871ee937e0fdbb506ac2a6af08d6ca698679ee3617edc41eef323adf8888"
+  name = "github.com/graphql-go/graphql"
+  packages = [
+    ".",
+    "gqlerrors",
+    "language/ast",
+    "language/kinds",
+    "language/lexer",
+    "language/location",
+    "language/parser",
+    "language/printer",
+    "language/source",
+    "language/typeInfo",
+    "language/visitor",
+  ]
+  pruneopts = ""
+  revision = "2b0b7340d2285b861482047fbf5de0488e021bea"
+  version = "v0.7.8"
+
+[[projects]]
+  digest = "1:a9b751be0c7ee70ea76159d441e7e162cafade014f54ca115a9f797063d9fbfe"
+  name = "github.com/graphql-go/handler"
+  packages = ["."]
+  pruneopts = ""
+  revision = "c1267356e6539d975e83bbea383c2bbb861dce5b"
+  version = "v0.2.3"
+
+[[projects]]
+  digest = "1:3c818dada3e41bdb0f509f78e6775610f1bb179449ec8c4c86a45fae35460f3f"
   name = "github.com/julienschmidt/httprouter"
   packages = ["."]
+  pruneopts = ""
   revision = "8c199fb6259ffc1af525cc3ad52ee60ba8359669"
   version = "v1.1"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "55c50706573b9a342e208b2cc955525d42e35be19beb361e5f105a2a13493290"
+  input-imports = [
+    "github.com/gin-gonic/gin",
+    "github.com/graphql-go/graphql",
+    "github.com/graphql-go/handler",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

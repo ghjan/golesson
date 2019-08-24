@@ -1,16 +1,15 @@
 package graphql
 
 import (
-	"golesson/schema"
-
+	"github.com/ghjan/golesson/schema"
 	"github.com/gin-gonic/gin"
 	"github.com/graphql-go/handler"
 )
 
-func GraphqlHandler() gin.HandlerFunc{
+func GraphqlHandler() gin.HandlerFunc {
 	h := handler.New(&handler.Config{
-		Schema: &schema.Schema,
-		Pretty: true,
+		Schema:   &schema.Schema,
+		Pretty:   true,
 		GraphiQL: true,
 	})
 

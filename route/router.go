@@ -1,9 +1,8 @@
 package router
 
 import (
-	"golesson/controller/hello"
-	"golesson/controller/graphql"
-	
+	"github.com/ghjan/golesson/controller/graphql"
+	"github.com/ghjan/golesson/controller/hello"
 	"github.com/gin-gonic/gin"
 )
 

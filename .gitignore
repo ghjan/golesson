@@ -1,1 +1,4 @@
 vendor/
+.idea/
+# Gopkg.lock
+*.log
